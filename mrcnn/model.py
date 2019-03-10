@@ -2345,7 +2345,7 @@ class MaskRCNN():
                                         histogram_freq=0, write_graph=True, write_images=False),
             keras.callbacks.ModelCheckpoint(self.checkpoint_path,
 					    verbose=0, save_weights_only=True,
-                                            save_best_only=save_best_only, monitor=monitored_quantity),
+					    save_best_only=save_best_only, monitor=monitored_quantity),
         ]
 
         # Add custom callbacks to the list
